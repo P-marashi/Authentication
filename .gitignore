@@ -1,0 +1,8 @@
+# Ignore db.sql3 file
+db.sql3
+
+# Ignore migration files
+/migrations/
+
+# Ignore your personal files
+/your_personal_files/

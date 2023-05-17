@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6b8c3372-5e75-47c4-9f98-cf441e9da65d" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OpUvgUH3nQv6dskXIUjJh4Or8i" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/authentication&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\authentication" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6b8c3372-5e75-47c4-9f98-cf441e9da65d" name="Changes" comment="" />
+      <created>1682257248718</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682257248718</updated>
+      <workItem from="1682257250910" duration="950000" />
+      <workItem from="1682258283180" duration="77000" />
+      <workItem from="1682258371220" duration="8728000" />
+      <workItem from="1682331434383" duration="10000" />
+      <workItem from="1682527194340" duration="69000" />
+      <workItem from="1682711873358" duration="6000" />
+      <workItem from="1682712209233" duration="40000" />
+      <workItem from="1683572700488" duration="2027000" />
+      <workItem from="1683626872388" duration="8844000" />
+      <workItem from="1683636520538" duration="5309000" />
+      <workItem from="1683807010851" duration="165000" />
+      <workItem from="1683807606006" duration="303000" />
+      <workItem from="1683807924919" duration="6000" />
+      <workItem from="1683808281771" duration="1020000" />
+      <workItem from="1683818927073" duration="1476000" />
+      <workItem from="1684281102117" duration="3825000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
