@@ -4,6 +4,7 @@ from django.core.cache import cache
 from django.core.exceptions import ObjectDoesNotExist
 from django.db import IntegrityError
 from rest_framework import status
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from accouunt.serializers import (ResetPasswordOTPVerifySerializer,
@@ -13,9 +14,10 @@ from accouunt.serializers import (ResetPasswordOTPVerifySerializer,
 
                                   UserRegisterAPISerializer,
                                   VerifyRegistrationSerializer,
+                                  UserProfileSerializer,
                                   )
 from .renderers import UserRenderer
-from .models import User
+from .models import User, UserProfile
 from rest_framework_simplejwt.tokens import RefreshToken
 from .utils import send_otp, check_otp
 
@@ -148,3 +150,22 @@ class ResetPasswordOTPVerify(APIView):
             token = get_token_for_user(user)
             return Response({'token': token, 'success': 'Password reset successfully'})
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class ProfileView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        user_profile = UserProfile.objects.get(user=request.user)
+        serializer = UserProfileSerializer(user_profile)
+        return Response(serializer.data)
+
+    def post(self, request):
+        serializer = UserProfileSerializer(data=request.data)
+
+        if serializer.is_valid():
+            user_profile = serializer.save(user=request.user)
+            response_data = UserProfileSerializer(user_profile).data
+            return Response(response_data, status=201)
+
+        return Response(serializer.errors, status=400)

@@ -5,7 +5,13 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.forms import ReadOnlyPasswordHashField
 from django.core.exceptions import ValidationError
 
-from accouunt.models import User
+from accouunt.models import User, UserProfile
+
+
+class UserProfileInline(admin.StackedInline):
+    model = UserProfile
+    can_delete = False
+    verbose_name_plural = "User Profile"
 
 
 class UserCreationForm(forms.ModelForm):
@@ -59,8 +65,8 @@ class UserAdmin(BaseUserAdmin):
     # The fields to be used in displaying the User model.
     # These override the definitions on the base UserAdmin
     # that reference specific fields on auth.User.
-    list_display = ["mobile", "created_at", "updated_at", "is_admin", "is_active"]
-    list_filter = ("is_active", "is_admin",  "is_superuser", "updated_at")
+    list_display = ["get_username", "mobile", "created_at", "updated_at", "is_admin", "is_active"]
+    list_filter = ("is_active", "is_admin", "is_superuser", "updated_at")
     fieldsets = [
         (None, {"fields": ["mobile", "password"]}),
         ("Personal info", {"fields": ["created_at"]}),
@@ -82,8 +88,15 @@ class UserAdmin(BaseUserAdmin):
     filter_horizontal = []
     readonly_fields = ["updated_at", "created_at"]
 
+    def get_username(self, obj):
+        return obj.userprofile.user_name
+
+    get_username.short_description = "Username"
+
 
 # Now register the new UserAdmin...
 admin.site.register(User, UserAdmin)
 # unregister the Group model from admin.
 admin.site.unregister(Group)
+
+admin.site.register(UserProfile)

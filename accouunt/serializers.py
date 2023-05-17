@@ -1,7 +1,7 @@
 from django.contrib.auth.hashers import make_password
 from rest_framework import serializers
 from django.core.validators import MaxLengthValidator, MinLengthValidator
-from .models import User
+from .models import User, UserProfile
 from .utils import check_otp
 
 
@@ -93,3 +93,10 @@ class ResetPasswordOTPVerifySerializer(serializers.Serializer):
         user.password = make_password("password")
         user.save()
         return user
+
+
+
+class UserProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserProfile
+        fields = ['image', 'user_name', 'last_login']

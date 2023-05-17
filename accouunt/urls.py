@@ -5,6 +5,7 @@ from accouunt.views import (UserRegisterAPIView,
                             RestPasswordAPIView,
                             ResetPasswordOTPVerify,
                             RequestOTPAgainAPIView,
+                            ProfileView,
                             )
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
@@ -24,6 +25,8 @@ urlpatterns = [
 
     # this path is for request OTP again
     path('request/otp/', RequestOTPAgainAPIView.as_view(), name="request_another_OTP"),
+    # this path is for UserProfile
+    path('ProfileView/', ProfileView.as_view(), name="user_profile"),
     # jwt path for token obtain and token refresh
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),

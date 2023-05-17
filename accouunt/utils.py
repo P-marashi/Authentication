@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 
 def send_otp(mobile):
     last_request_time = cache.get(f"otp_request_time_{mobile}")
-    if last_request_time and datetime.now() - last_request_time < timedelta(minutes=0.5):
+    if last_request_time and datetime.now() - last_request_time < timedelta(minutes=1):
         raise ValueError("Please wait for 1 minute before requesting another OTP.")
     else:
         otp = random.randint(1000, 9999)

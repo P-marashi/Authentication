@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b8c3372-5e75-47c4-9f98-cf441e9da65d" name="Changes" comment="" />
+    <list default="true" id="6b8c3372-5e75-47c4-9f98-cf441e9da65d" name="Changes" comment="">
+      <change beforePath="F:/authentication/.idea/dataSources/492ffb78-7c17-4735-9dcf-21b4f0c50f42.xml" beforeDir="false" afterPath="F:/authentication/.idea/dataSources/492ffb78-7c17-4735-9dcf-21b4f0c50f42.xml" afterDir="false" />
+      <change beforePath="F:/authentication/.idea/workspace.xml" beforeDir="false" afterPath="F:/authentication/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="F:/authentication/accouunt/admin.py" beforeDir="false" afterPath="F:/authentication/accouunt/admin.py" afterDir="false" />
+      <change beforePath="F:/authentication/accouunt/models.py" beforeDir="false" afterPath="F:/authentication/accouunt/models.py" afterDir="false" />
+      <change beforePath="F:/authentication/accouunt/serializers.py" beforeDir="false" afterPath="F:/authentication/accouunt/serializers.py" afterDir="false" />
+      <change beforePath="F:/authentication/accouunt/urls.py" beforeDir="false" afterPath="F:/authentication/accouunt/urls.py" afterDir="false" />
+      <change beforePath="F:/authentication/accouunt/utils.py" beforeDir="false" afterPath="F:/authentication/accouunt/utils.py" afterDir="false" />
+      <change beforePath="F:/authentication/accouunt/views.py" beforeDir="false" afterPath="F:/authentication/accouunt/views.py" afterDir="false" />
+      <change beforePath="F:/authentication/conig/settings.py" beforeDir="false" afterPath="F:/authentication/conig/settings.py" afterDir="false" />
+      <change beforePath="F:/authentication/conig/urls.py" beforeDir="false" afterPath="F:/authentication/conig/urls.py" afterDir="false" />
+      <change beforePath="F:/authentication/db.sqlite3" beforeDir="false" afterPath="F:/authentication/db.sqlite3" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +25,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="F:/authentication" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -59,7 +74,9 @@
       <workItem from="1683807924919" duration="6000" />
       <workItem from="1683808281771" duration="1020000" />
       <workItem from="1683818927073" duration="1476000" />
-      <workItem from="1684281102117" duration="3825000" />
+      <workItem from="1684281102117" duration="4335000" />
+      <workItem from="1684324361298" duration="224000" />
+      <workItem from="1684341327216" duration="3494000" />
     </task>
     <servers />
   </component>

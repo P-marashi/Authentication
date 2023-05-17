@@ -40,6 +40,7 @@ class UserManager(BaseUserManager):
 
         return user
 
+
 class User(AbstractBaseUser, PermissionsMixin):
     mobile = models.CharField(
         _("mobile"),
@@ -98,3 +99,13 @@ class User(AbstractBaseUser, PermissionsMixin):
     @property
     def is_employee(self):
         return self.is_staff and not self.is_superuser
+
+
+class UserProfile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='profile_images')
+    user_name = models.CharField(max_length=150)
+    last_login = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return self.user_name
